@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+    <style>
+        body {
+            border: 2px solid rebeccapurple;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .img-container{
+            display: flex;
+            gap: 10px;
+        }
+        .img-container div{
+            width: 50%;
+        }
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            .img-container{
+            flex-direction:column-reverse;
+        }
+        .img-container div{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Responsive website</h1>
+        <ol>
+            <li>viewport meta tag</li>
+            <li>CSS Relative Unite</li>
+            <li>body max width and horizontal center align</li>
+            <li>image fluid</li>
+            <li>two colum flex and use media query flex direction column</li>
+            <li>multi column: grid layout</li>
+            <li>menu Responsive: will need Javascript</li>
+        </ol>
+    </header>
+    <main>
+        <div class="img-container">
+            <div class="div">
+                <img src="https://media.istockphoto.com/id/1395140920/photo/peach-blueberry-and-arugula-fresh-fruit-salad-with-cheese-and-almond-nuts-top-view.jpg?s=2048x2048&w=is&k=20&c=86_OOuiR6wRVqD1Qf7dV-XP7XHVaahhK_af5k6aRedU="
+                    alt="">
+
+            </div>
+            <div class="div">
+                <img src="https://images.pexels.com/photos/2541239/pexels-photo-2541239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
