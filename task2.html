@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            color: white;
+            gap: 10px;
+            font-size: 20px;
+        }
+
+        .left-div {
+            background-color: red;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-div {
+            height: 100vh;
+        }
+
+        .right-div-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .two {
+            background-color: rgb(226, 226, 16);
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .there-four {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .there {
+            background-color: rgb(43, 226, 98);
+            width: 50%;
+            height: 49vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .four {
+            background-color: rgb(17, 80, 148);
+            width: 50%;
+            height: 49vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .left-div {
+            height: 25vh;
+        }
+        .right-div {
+            height: 25vh;
+        }
+        .there-four {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .two {
+            height: 25vh;
+        }
+        .there {
+            width: 100%;
+            height: 25vh;
+        }
+        .four {
+            width: 100%;
+            height: 25vh;
+           
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-div">one</div>
+        <div class="right-div">
+            <div class="right-div-container">
+                <div class="two">two</div>
+                <div class="there-four">
+                    <div class="there">there</div>
+                    <div class="four">four</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
